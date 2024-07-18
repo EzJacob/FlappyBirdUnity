@@ -89,13 +89,13 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 4. **TestRestartingGameWithButton**: Verifies that the game restarts correctly when the restart button is pressed after a game over.
 
-## Issues Identified:
+### Issues Identified:
 
 1. **Edit Mode Tests**: Initially encountered `NullReferenceException` errors due to improper setup of components.
 
 2. **Play Mode Tests**: Some tests failed because components were not set up correctly, causing runtime errors.
 
-## Issues Resolved:
+### Issues Resolved:
 
 1. **Edit Mode Tests**: Refined the setup methods to ensure all necessary components (like `Rigidbody2D`, `Camera`, and `LogicScript`) were correctly instantiated and assigned, which resolved the `NullReferenceException` errors.
 
