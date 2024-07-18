@@ -99,6 +99,6 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 1. **Edit Mode Tests**: Refined the setup methods to ensure all necessary components (like `Rigidbody2D`, `Camera`, and `LogicScript`) were correctly instantiated and assigned, which resolved the `NullReferenceException` errors.
 
-2. **Play Mode Tests**: Improved the test setup by ensuring all components were properly initialized, allowing the tests to run smoothly and without errors. (Not resolved for all tests)
+2. **Play Mode Tests**: Improved the test setup by ensuring all components were properly initialized. (Not resolved for all tests)
 
 ---
