@@ -43,7 +43,7 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 4. Not being able to test things smoothly, I had to make certain assumptions.
 
-5. A challenge I haven't resolved is that some tests in Play Mode don't work. The issue arises when setting up components for the tests, not during the testing itself.
+5. Some tests in Play Mode don't work. The issue arises when setting up components for the tests, not during the testing itself.
 
 ## How Challenges Were Resolved:
 
@@ -54,6 +54,8 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 3. Gained a solid understanding of the Arrange, Act, Assert pattern in testing, which emphasized the importance of correctly assigning and setting up different components to ensure accurate and effective tests.
 
 4. To address the difficulty of testing smoothly, I made the game functions more general and modular. This approach allowed me to isolate individual components and test them under assumed conditions.
+
+5. To resolve issues with Play Mode tests arising during component setup, I implemented mock tests to simplify and isolate the testing environment.
 
 ## Tests Overview:
 
@@ -71,6 +73,8 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 6. **TestCheckBoundsWhenInBounds**: Ensures that the bird remains alive and the game over screen is not shown when the bird stays within the camera bounds.
 
+7. **TestAddScoreSound**: Verifies that the score-increase sound is played correctly when the addScore method is called.
+
 ### Integration Tests (Play Mode):
 
 1. **TestPipeMovesLeft**: Verifies that a pipe moves left over time when its move speed is set.
@@ -79,7 +83,7 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 3. **TestAtStartGameIsFrozen**: Confirms that the game is initially frozen at the start by checking that the time scale is set to zero.
 
-### The following tests have not been written due to an unresolved error:
+### The following tests have been written with mocking:
 
 1. **TestBirdMovement**: Verifies that the bird moves correctly according to player input and game physics.
 
@@ -87,7 +91,7 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 3. **TestBirdGoesBetweenPipesTriggerAddingScore**: Confirms that the score increases when the bird successfully passes between pipes.
 
-4. **TestRestartingGameWithButton**: Verifies that the game restarts correctly when the restart button is pressed after a game over.
+4. **TestButtonLoadsNewScene**: Verifies that the game loads new scene (restarts in the context of the game) correctly when the restart button is pressed after a game over.
 
 ### Issues Identified:
 
@@ -99,6 +103,6 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 1. **Edit Mode Tests**: Refined the setup methods to ensure all necessary components (like `Rigidbody2D`, `Camera`, and `LogicScript`) were correctly instantiated and assigned, which resolved the `NullReferenceException` errors.
 
-2. **Play Mode Tests**: Improved the test setup by ensuring all components were properly initialized. (Not resolved for all tests)
+2. **Play Mode Tests**: Improved the test setup by ensuring all components were properly initialized. For unresolved tests, implemented mock tests to isolate and verify specific functionalities.
 
 ---
