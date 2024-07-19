@@ -31,7 +31,7 @@ Flappy Bird Game made in Unity with basic tests with the help of Unity Test Fram
 
 6. Ensuring that when the bird hits the pipes or goes beyond the camera boundary, the bird's status changes to dead, the game freezes, and a game over UI with a play again button is displayed.
 
-7. I added a 'Press Space to Start' note for the player and ensured that the game remains frozen at the beginning until the user presses the spacebar for the first time.
+7. I added a 'Press Space to Start' note for the player and ensured that the game remains frozen at the beginning until the user presses the spacebar for the first time. Additionally, I added sound effects for when the bird passes between pipes and implemented an animation for the bird's wings.
 
 ## Challenges Encountered:
 
